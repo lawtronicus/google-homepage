@@ -1,0 +1,50 @@
+/* googleStyles.css */
+
+.container {
+    display: grid;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  }
+  
+  h1, h2, h3 {
+    font-family: monospace;
+    text-align: center;
+  }
+  
+.nav-left {
+    background-color:dodgerblue;
+    grid-area: 1 / 1 / 2 / 9;
+}
+
+.nav-right {
+    background-color: yellow;
+    grid-area: 1 / 9 / 2 / 13;
+}
+
+.content {
+    background-color: red;
+    grid-area: 2 / 1 / 11 / 13;
+}
+
+.footer-one {
+    background-color: purple;
+    grid-area: 11 / 1 / 12 / 13;
+}
+
+.footer-two-left {
+    background-color: orange;
+    grid-area: 12 / 1 / 13 / 5;
+}
+
+.footer-two-center {
+    background-color: navy;
+    grid-area: 12 / 5 / 13 / 10;
+}
+
+.footer-two-right {
+    background-color: pink;
+    grid-area: 12 / 10 / 13 / 13;
+}
