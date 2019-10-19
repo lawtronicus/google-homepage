@@ -18,7 +18,7 @@ html, body {
     width: 100%;
     grid-gap: 0px;
     grid-template-rows: auto 1fr auto auto;
-    grid-template-columns: 1fr 4fr 1.1fr;
+    grid-template-columns: 1fr 4fr auto;
     grid-template-areas:
     ". . nav-right"
     ". main ."
@@ -26,6 +26,7 @@ html, body {
     "footer-two footer-two footer-two";
     margin: 0px;
     padding: 0px;
+    overflow: scroll;
   }
   
   h1, h2, h3 {
@@ -33,10 +34,17 @@ html, body {
     text-align: center;
   }
 
+  .nav-link {
+      margin-bottom: 10px;
+  }
+
 .nav-right {
     grid-area: nav-right;
     justify-self: right;
     align-self: center;
+    padding-right: 27px;
+    padding-top: 15px;
+    overflow: scroll;
   /*  grid-area: 1 / 9 / 2 / 13; */
 }
 
@@ -247,7 +255,7 @@ html, body {
 
 .footer-two-right {
     grid-area: footer-two-right;
-    padding-right: 15px;
+    padding-right: 27px;
     justify-self: right;
   /*  grid-area: 12 / 10 / 13 / 13; */
 }
