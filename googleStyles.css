@@ -5,10 +5,11 @@
 }
 
 html, body {
-    height: 96.5%;
-    width: 99%;
+    height: 100%;
+    width: 100%;
     padding: 0px;
     margin: 0px;
+    border: 0px;
 }
 .container {
     grid-gap: none;
@@ -22,7 +23,7 @@ html, body {
     ". . nav-right"
     ". main ."
     "footer-one footer-one footer-one"
-    "footer-two footer-two footer-two-right";
+    "footer-two footer-two footer-two";
     margin: 0px;
     padding: 0px;
   }
@@ -35,6 +36,7 @@ html, body {
 .nav-right {
     grid-area: nav-right;
     justify-self: right;
+    align-self: center;
   /*  grid-area: 1 / 9 / 2 / 13; */
 }
 
@@ -186,7 +188,6 @@ html, body {
     margin: -5px;
     padding: 0px;
     border-top: 1px solid #e4e4e4;
-    min-width: 100%;
 
     /* grid-area: 11 / 1 / 12 / 13; */
 }
@@ -211,7 +212,7 @@ html, body {
     margin: -5px;
     padding: 0px;
     border-top: 1px solid #e4e4e4;
-    min-width: 100%
+    min-width: 100%;
 }
 
 .footer-two-left {
@@ -225,6 +226,7 @@ html, body {
 .footer-two-right {
     grid-area: footer-two-right;
     padding-right: 15px;
+    justify-self: right;
   /*  grid-area: 12 / 10 / 13 / 13; */
 }
 
@@ -236,6 +238,10 @@ html, body {
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 15px;
+}
+
+.footer-two a:hover {
+    text-decoration: underline;
 }
 
 .google-apps {
