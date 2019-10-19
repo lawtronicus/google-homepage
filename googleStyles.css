@@ -57,6 +57,8 @@ html, body {
 
 .main {
     grid-gap:5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
     align-self: center;
     grid-area: main;
     display: grid;
@@ -80,12 +82,12 @@ html, body {
 .search-bar {
     grid-area: search-bar;
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-areas:
-    "mag-glass search";
+    "mag-glass search mic";
     justify-self: center;
     align-self: middle;
-    width: 490px;
+    width: 500px;
     background: #FFF;
     /*border-radius: 8px;*/
     border: 1px solid #dfe1e5;
@@ -157,6 +159,28 @@ html, body {
     opacity: .4;
 }
 
+.mic {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-items: start;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+    padding-right: 14px;
+}
+
+.mic-image {
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    vertical-align: middle;
+}
+
 .search {
     grid-area: search;
 }
@@ -185,7 +209,6 @@ html, body {
     justify-items: left;
     /*padding: 0px;*/
     height: 45px;
-    margin: -5px;
     padding: 0px;
     border-top: 1px solid #e4e4e4;
 
@@ -209,7 +232,6 @@ html, body {
     "footer-two-left . footer-two-right";
     grid-template-columns: auto 1fr auto;
     height: 45px;
-    margin: -5px;
     padding: 0px;
     border-top: 1px solid #e4e4e4;
     min-width: 100%;
@@ -233,7 +255,7 @@ html, body {
 .footer-two a{
     display: inline-block;
     font-size: 13px;
-    padding-left: 30px;
+    padding-left: 27px;
     color: #5F6368;
     margin-left: 0px;
     margin-right: 0px;
